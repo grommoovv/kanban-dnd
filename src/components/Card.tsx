@@ -1,13 +1,13 @@
 import { DragEvent, FC } from 'react'
 import { motion } from 'framer-motion'
 import { DropIndicator } from './DropIndicator'
-import { CardType } from '../data'
+import { Task } from '../data'
 
 interface CardProps {
   id: string
   title: string
   column: string
-  handleDragStart: (e: DragEvent<HTMLDivElement>, card: CardType) => void
+  handleDragStart: (e: DragEvent<HTMLDivElement>, card: Task) => void
 }
 
 export const Card: FC<CardProps> = ({ title, id, column, handleDragStart }) => {
